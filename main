@@ -95,26 +95,6 @@ public class Main {
         System.out.println("Total Bid Value: " + totalBid);
 
 
-        ///  part 3///
-
-        int totalWildBid=0;
-
-        for (int i=0; i<count; i++) {
-
-            int rankWild =1;
-            for (int j=0; j<count; j++) {
-                if (i!=j) {
-                    if (hands[j].isStrongerThanWild(hands[i])) {
-                        rankWild=rankWild+1;
-                    }
-                }
-
-            }
-
-            totalWildBid=totalWildBid+rankWild*hands[i].getBid();
-        }
-
-        System.out.println("Total Bid Value with Jacks: " + totalWildBid);
 
 
 
